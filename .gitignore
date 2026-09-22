@@ -12,3 +12,6 @@
 *.log
 tmp/
 temp/
+
+# Local Cursor IDE (not the plugin)
+.cursor/

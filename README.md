@@ -1,34 +1,16 @@
-# Cursor plugin template
+# Writer MCP
 
-Build and publish Cursor Marketplace plugins from a single repo.
+Cursor plugin for Writer’s hosted MCP server. One standard interface for governed Writer tools, workflows, deliverables, and company context.
 
-Two starter plugins are included:
+Connects to `https://api.writer.com/v1/mcp` with OAuth. Closed beta: Playbooks and deliverables.
 
-- **starter-simple**: rules and skills only
-- **starter-advanced**: rules, skills, agents, commands, hooks, MCP, and scripts
+## What it includes
 
-## Getting started
+- Hosted Writer MCP at `https://api.writer.com/v1/mcp` (OAuth, permissions follow your Writer seat)
+- Playbooks: list, get, and run playbooks you can access in Writer
+- Runs: check status, list runs, resume or cancel
+- Deliverables: list outputs, get run output, and download deliverables
 
-[Use this template](https://github.com/cursor/plugin-template/generate) to create a new repository, then customize:
+## When to use it
 
-1. `.cursor-plugin/marketplace.json`: set marketplace `name`, `owner`, and `metadata`.
-2. `plugins/*/.cursor-plugin/plugin.json`: set `name` (lowercase kebab-case), `displayName`, `author`, `description`, `keywords`, `license`, and `version`.
-3. Replace placeholder rules, skills, agents, commands, hooks, scripts, and logos.
-
-To add more plugins, see `docs/add-a-plugin.md`.
-
-## Single plugin vs multi-plugin
-
-This template defaults to **multi-plugin** (multiple plugins in one repo).
-
-For a **single plugin**, move your plugin folder contents to the repository root, keep one `.cursor-plugin/plugin.json`, and remove `.cursor-plugin/marketplace.json`.
-
-## Submission checklist
-
-- Each plugin has a valid `.cursor-plugin/plugin.json`.
-- Plugin names are unique, lowercase, and kebab-case.
-- `.cursor-plugin/marketplace.json` entries map to real plugin folders.
-- All frontmatter metadata is present in rule, skill, agent, and command files.
-- Logos are committed and referenced with relative paths.
-- `node scripts/validate-template.mjs` passes.
-- Repository link is ready for submission to the Cursor team (Slack or `kniparko@anysphere.com`).
+Use when someone wants to run a Writer playbook from Cursor, check a run, or pull a deliverable into the current work — without rebuilding a one-off integration.
