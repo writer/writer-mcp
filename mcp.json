@@ -1,6 +1,7 @@
 {
   "mcpServers": {
     "writer": {
+      "type": "http",
       "url": "https://api.writer.com/v1/mcp"
     }
   }
