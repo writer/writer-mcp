@@ -1,16 +1,16 @@
-# Writer MCP
+# WRITER MCP
 
-Plugin that connects agents to [Writer](https://writer.com) through Writer’s official hosted [Model Context Protocol](https://modelcontextprotocol.io/) server. One standard interface for governed Writer tools, workflows, deliverables, and company context.
+Plugin that connects agents to [WRITER](https://writer.com) through WRITER’s official hosted [Model Context Protocol](https://modelcontextprotocol.io/) server. One standard interface for governed WRITER tools, workflows, deliverables, and company context.
 
-Run Writer playbooks, check on runs, and pull deliverables into the current work from any MCP-compatible application.
+Run WRITER playbooks, check on runs, and pull deliverables into the current work from any MCP-compatible application.
 
 Closed beta: Playbooks and deliverables.
 
 ## Install
 
 1. Open **Cursor Settings → Plugins**.
-2. Search for **Writer MCP**.
-3. Click **Install**, then complete the Writer sign-in prompt.
+2. Search for **WRITER MCP**.
+3. Click **Install**, then complete the WRITER sign-in prompt.
 
 Or run `/add-plugin writer-mcp` in chat.
 
@@ -29,15 +29,15 @@ Or run `/add-plugin writer-mcp` in chat.
 
 ## Setup
 
-Writer’s MCP server uses OAuth 2.1 with PKCE and dynamic client registration, so there is nothing to register and no client ID or secret to configure.
+WRITER’s MCP server uses OAuth 2.1 with PKCE and dynamic client registration, so there is nothing to register and no client ID or secret to configure.
 
 1. Install the plugin.
-2. Complete the Writer OAuth login in the browser when your client prompts.
-3. Tool calls run with your own Writer permissions: you see the playbooks and deliverables your Writer seat can access.
+2. Complete the WRITER OAuth login in the browser when your client prompts.
+3. Tool calls run with your own WRITER permissions: you see the playbooks and deliverables your WRITER seat can access.
 
 Access requirements:
 
-- A Writer account with a seat in an organization enrolled in the Playbooks and deliverables closed beta.
+- A WRITER account with a seat in an organization enrolled in the Playbooks and deliverables closed beta.
 - The server requests the `mcp:playbooks` and `mcp:deliverables` scopes. Clients that discover scopes from the OAuth metadata get these automatically.
 - Access tokens last one hour and refresh automatically; you may be asked to sign in again after a day.
 - Requests are rate limited per organization.
@@ -67,7 +67,7 @@ This plugin ships no code. It only points your client at `https://api.writer.com
 
 ## Docs
 
-- Writer developer docs: https://dev.writer.com
+- WRITER developer docs: https://dev.writer.com
 - Support: https://support.writer.com
 
 ## License
